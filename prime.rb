@@ -5,11 +5,11 @@ def prime?(number)
     nonprime_check = range.any? do |i|
     number % i == 0
   end
-  #if number < 2
-  #  false
-  #elsif nonprime_check == true 
-  #  false
-  #else
-  #  true
-  #end
+  if number < 2
+    false
+  elsif nonprime_check == true 
+    false
+  else
+    true
+  end
 end
